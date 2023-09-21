@@ -1,0 +1,339 @@
+/* Default (Light Mode) */
+:root {
+    --background-color: #FAF3E0;
+    --text-color: #5A4D40;
+    --navbar-background: #F2DFA2;
+    --navbar-text: #5A4D40;
+    --navbar-text-hover: #F2DFA2;
+    --navbar-hover-background: #b9b29a;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Dark Mode */
+[data-theme="dark"] {
+    --background-color: #2E2E2E;
+    --text-color: #FAF3E0;
+    --navbar-background: #5A4D40;
+    --navbar-text: #FAF3E0;
+    --navbar-text-hover: #5A4D40;
+    --navbar-hover-background: #F2DFA2;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: var(--navbar-background);
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: var(--navbar-text);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    z-index: 1000;
+}
+
+.navbar a:hover {
+    background-color: var(--navbar-hover-background);
+    color: var(--navbar-text-hover);
+}
+
+.center-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+    padding-top: 60px; /* Adjust for navbar */
+}
+
+#theme-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.lightbulb {
+    fill: var(--text-color);
+    transition: fill 0.3s ease;
+}
+
+/* ... (rest of your CSS) ... */
+
+.navbar {
+    /* ... (rest of your navbar styles) ... */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px; /* Add some padding to the sides */
+}
+
+.navbar-links {
+    display: flex;
+    gap: 16px; /* Spacing between links */
+}
+
+.navbar a {
+    color: var(--navbar-text);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    background-color: var(--navbar-hover-background);
+    color: var(--navbar-text-hover);
+}
+
+#theme-toggle {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    order: -1; /* Ensure it's to the left */
+}
+
+.lightbulb {
+    fill: var(--text-color);
+    transition: fill 0.3s ease;
+}
+
+[data-theme="dark"] .lightbulb {
+    fill: #FFD700; /* Gold color for the bulb in dark mode */
+}
+
+.icon-links {
+    display: flex;
+    gap: 20px; /* Adjust the spacing between icons */
+    justify-content: center; /* Center the icons */
+}
+
+.icon-links a {
+    text-decoration: none;
+    font-size: 24px; /* Adjust the size of the emoji/icons */
+    color: var(--text-color);
+    transition: color 0.3s ease;
+}
+
+.icon-links a:hover {
+    color: var(--navbar-text-hover);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    height: 300px; /* Adjust as needed */
+    background-color: #F2DFA2; /* Placeholder color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.ending {
+    padding: 20px;
+    text-align: center;
+}
+
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #F2DFA2; /* Placeholder color */
+}
+
+/* Hobbies Section */
+.hobbies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Space between each hobby */
+    margin-top: 20px; /* Space between the text and the hobbies section */
+}
+
+.hobby {
+    width: 100px; /* Width of the hobby container */
+    text-align: center; /* Center the text below the image */
+}
+
+.hobby img {
+    width: 100%; /* Make the image take the full width of its container */
+    height: 100px; /* Set a fixed height */
+    object-fit: cover; /* This will ensure the image covers the area without distortion */
+    border-radius: 8px; /* Optional: to make the images have rounded corners */
+}
+
+.project-card {
+    border: 1px solid var(--navbar-background);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card:hover {
+    background-color: var(--navbar-hover-background);
+    transform: translateY(-5px);
+}
+
+.project-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--navbar-background);
+    display: inline-block;
+}
+
+.project-description {
+    margin-bottom: 10px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: var(--navbar-text);
+    background-color: var(--navbar-background);
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: var(--navbar-text);
+    color: var(--navbar-background);
+}
+
+.label {
+    background-color: var(--navbar-background);
+    color: var(--navbar-text);
+    border-radius: 15px;
+    padding: 5px 10px;
+    margin: 5px;
+    font-size: 0.8em;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.label:hover {
+    background-color: var(--navbar-hover-background);
+    color: var(--navbar-text-hover);
+}
+
+.labels {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.tool-label {
+ /* A lighter warm color for tools */
+    color: #5A4D40;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 0.8em;
+    transition: background-color 0.3s ease;
+}
+
+.tool-label:hover {
+    background-color: #e6c089; /* A slightly darker shade on hover */
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%; /* Position the tooltip above the text */
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--navbar-background);
+    color: var(--navbar-text);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.download-btn:hover {
+    background-color: var(--navbar-hover-background);
+    color: var(--navbar-text-hover);
+}
+
+.research-section {
+    padding: 20px 0;
+}
+
+.research-section h2 {
+    margin-bottom: 20px;
+}
+
+.research-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.research-section li {
+    margin-bottom: 10px;
+}
+
+.research-section a {
+    color: var(--navbar-text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.research-section a:hover {
+    color: var(--navbar-text-hover);
+}
