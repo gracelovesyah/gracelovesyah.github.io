@@ -58,15 +58,14 @@ body {
     background-color: var(--navbar-hover-background);
     color: var(--navbar-text-hover);
 }
-
 .center-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 90vh;
+    min-height: 90vh; /* Use min-height instead of height */
     text-align: center;
-    padding-top: 130px; /* Adjust for navbar */
+    padding-top: 20px; /* Adjust this value based on the height of your navbar */
 }
 
 .left-content {
@@ -79,12 +78,7 @@ body {
     text-align: left;
     padding-top: 130px; /* Adjust for navbar */
 }
-/* Adjust padding for smaller screens */
-@media (max-width: 768px) {  /* Adjust 768px to the breakpoint you want */
-    .center-content {
-        padding-top: 250px;  /* Increase padding for smaller screens */
-    }
-}
+
 #theme-toggle {
     background-color: transparent;
     border: none;
@@ -243,6 +237,59 @@ h1 {
     object-fit: cover; /* This will ensure the image covers the area without distortion */
     border-radius: 8px; /* Optional: to make the images have rounded corners */
 }
+.navbar {
+    position: relative; /* Set the navbar to relative so the lightbulb (absolute) is positioned relative to it */
+}
+
+.lightbulb {
+    position: absolute; /* Position the lightbulb absolutely within the navbar */
+    top: 50%; /* Center it vertically */
+    right: 10px; /* 10px from the right edge of the navbar */
+    transform: translateY(-50%); /* Center it vertically */
+}
+
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {  /* Adjust 768px to the breakpoint you want */
+    .center-content {
+        padding-top: 20px;  /* Increase padding for smaller screens */
+    }
+    .navbar a {
+        font-size: 15px; /* Adjust this value to your preference for smaller screens */
+        padding: 8px;
+
+    }
+    .lightbulb {
+        left: 130px; /* Adjust the right position for smaller screens if needed */
+    }
+    .center-content-hobby {
+        display: gird;
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
+        grid-template-rows: repeat(2, minmax(100px, 1fr));
+        gap: 20px;
+        align-items: center;
+        justify-items: center;
+        padding:60px;
+    }
+    
+    .hobbies {
+        display: contents;
+        flex-direction: column;
+        align-items: center;
+    }
+    h1 {
+        grid-column: 1/2; /* Spanning from column 2 to 4 */
+        grid-row: 2/2;
+        text-align: center;
+    }
+    .hobby {
+        margin-bottom: 20px; /* Add some space between each hobby */
+    }
+    .hobby p {
+        font-size: 1.2em; /* Increase the font size for hobby labels */
+        text-align: center; /* Center align the text */
+    }
+}
+
 
 .project-card {
     border: 1px solid var(--navbar-background);
@@ -464,3 +511,4 @@ h1 {
     background-color: var(--navbar-text);
     color: var(--navbar-background);
 }
+
