@@ -200,6 +200,40 @@ body {
     border-radius: 8px; /* Optional: to make the images have rounded corners */
 }
 
+/* Hobbies Section new */
+.center-content-hobby {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(100px, 1fr));
+    grid-template-rows: repeat(5, minmax(100px, 1fr));
+    gap: 20px;
+    align-items: center;
+    justify-items: center;
+    width: max-content;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding:60px;
+}
+
+
+h1 {
+    grid-column: 2/5; /* Spanning from column 2 to 4 */
+    grid-row: 2/5;
+    text-align: center;
+}
+
+.hobbies {
+    display: contents; /* This will make the .hobbies div act as if it's not there, allowing its children to participate directly in the .center-content grid */
+}
+
+
+
+.hobby img {
+    width: 100%; /* Make the image take the full width of its container */
+    height: 100px; /* Set a fixed height */
+    object-fit: cover; /* This will ensure the image covers the area without distortion */
+    border-radius: 8px; /* Optional: to make the images have rounded corners */
+}
+
 .project-card {
     border: 1px solid var(--navbar-background);
     padding: 20px;
