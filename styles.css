@@ -138,6 +138,7 @@ body {
     display: flex;
     gap: 20px; /* Adjust the spacing between icons */
     justify-content: center; /* Center the icons */
+    text-decoration: none;
 }
 
 .icon-links a {
@@ -458,11 +459,12 @@ h1 {
 
 
 .resume-preview {
-    width: 70%; 
+    width: 100%; 
     max-width: 100%; /* Adjust as needed */
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.2s;
+    margin: 20px;
 }
 
 .resume-preview:hover {
@@ -512,3 +514,7 @@ h1 {
     color: var(--navbar-background);
 }
 
+
+a {
+    text-decoration: none;
+}  
