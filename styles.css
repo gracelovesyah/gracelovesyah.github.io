@@ -13,7 +13,7 @@
     box-sizing: border-box;
 }
 /* Dark Mode */
-[data-theme="dark"] {
+.dark {
     --background-color: #2E2E2E;
     --text-color: #FAF3E0;
     --navbar-background: #5A4D40;
@@ -21,8 +21,12 @@
     --navbar-text-hover: #5A4D40;
     --navbar-hover-background: #F2DFA2;
 }
-
+.navbar a, .project-link, .download-btn, .label, .tool-label, .research-section a {
+    will-change: background-color, color;
+}
 body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+    will-change: background-color, color;
     font-family: Arial, sans-serif;
     background-color: var(--background-color);
     color: var(--text-color);
@@ -30,7 +34,9 @@ body {
     padding: 0;
 }
 
+
 .navbar {
+    will-change: background-color, color;
     background-color: var(--navbar-background);
     overflow: hidden;
     position: fixed;
@@ -60,9 +66,15 @@ body {
     justify-content: center;
     height: 90vh;
     text-align: center;
-    padding-top: 60px; /* Adjust for navbar */
+    padding-top: 130px; /* Adjust for navbar */
 }
 
+/* Adjust padding for smaller screens */
+@media (max-width: 768px) {  /* Adjust 768px to the breakpoint you want */
+    .center-content {
+        padding-top: 250px;  /* Increase padding for smaller screens */
+    }
+}
 #theme-toggle {
     background-color: transparent;
     border: none;
@@ -89,10 +101,6 @@ body {
     padding: 0 16px; /* Add some padding to the sides */
 }
 
-.navbar-links {
-    display: flex;
-    gap: 16px; /* Spacing between links */
-}
 
 .navbar a {
     color: var(--navbar-text);
@@ -336,4 +344,25 @@ body {
 
 .research-section a:hover {
     color: var(--navbar-text-hover);
+}
+.navbar-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#theme-toggle {
+    margin-left: 20px; /* Add some space between the last link and the button */
+}
+
+.resume-preview {
+    width: 70%; 
+    max-width: 100%; /* Adjust as needed */
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.resume-preview:hover {
+    transform: scale(1.05);
 }
