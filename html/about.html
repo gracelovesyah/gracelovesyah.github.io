@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Jiahe Grace - About</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="themeToggle.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <script src="../scripts/themeToggle.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -34,78 +34,84 @@
     <div class="hobbies">
 
         <div class="hobby hiking">
-            <img src="./pic/hiking.png" alt="hiking Image">
+            <img src="../pic/hiking.png" alt="hiking Image">
             <p>Hiking</p>
         </div>
 
         <div class="hobby skiing">
-            <img src="./pic/skiing.png" alt="Skiing Image">
+            <img src="../pic/skiing.png" alt="Skiing Image">
             <p>Skiing</p>
         </div>
 
         <div class="hobby me">
-            <img src="./pic/me.png" alt="me Image">
+            <img src="../pic/me.png" alt="me Image">
             <p>#ENFP</p>
         </div>
 
         <div class="hobby photography">
-            <img src="./pic/photography.png" alt="Photography Image">
+            <img src="../pic/photography.png" alt="Photography Image">
             <p>Photography</p>
         </div>
 
         <div class="hobby traveling">
-            <img src="./pic/traveling.png" alt="Traveling Image">
+            <img src="../pic/traveling.png" alt="Traveling Image">
             <p>Traveling</p>
         </div>
         <div class="hobby volunteer">
-            <img src="./pic/volunteering.png" alt="volunteer Image">
+            <img src="../pic/volunteering.png" alt="volunteer Image">
             <p>Volunteer</p>
         </div>
         <div class="hobby bakery">
-            <img src="./pic/bakery.png" alt="bakery Image">
+            <img src="../pic/bakery.png" alt="bakery Image">
             <p>Bakery</p>
         </div>
 
         <div class="hobby coffee">
-            <img src="./pic/coffee.png" alt="coffee Image">
+            <img src="../pic/coffee.png" alt="coffee Image">
             <p>Coffee</p>
         </div>
 
         <div class="hobby Foodie">
-            <img src="./pic/foodie.png" alt="foodie Image">
+            <img src="../pic/foodie.png" alt="foodie Image">
             <p>Foodie</p>
         </div>
         <div class="hobby Vlogging">
-            <img src="./pic/vlogger.png" alt="vlogger Image">
+            <img src="../pic/vlogger.png" alt="vlogger Image">
             <p>Vlogging</p>
         </div>
         <div class="hobby ctwalk">
-            <img src="./pic/ctwalk.png" alt="ctwalk Image">
+            <img src="../pic/ctwalk.png" alt="ctwalk Image">
             <p>City Walk</p>
         </div>
         <div class="hobby cpop">
-            <img src="./pic/cpop.png" alt="cpop Image">
+            <img src="../pic/cpop.png" alt="cpop Image">
             <p>Cpop</p>
         </div>
         <div class="hobby study">
-            <img src="./pic/study.png" alt="study Image">
+            <img src="../pic/study.png" alt="study Image">
             <p>Study</p>
         </div>
         <div class="hobby communication">
-            <img src="./pic/communication.png" alt="communication Image">
+            <img src="../pic/communication.png" alt="communication Image">
             <p>Communication</p>
         </div>
         <div class="hobby math">
-            <img src="./pic/math.png" alt="math Image">
+            <img src="../pic/math.png" alt="math Image">
             <p>Math & Stats</p>
         </div>
         </div>
         <div class="hobby museum">
-            <img src="./pic/museum.png" alt="museum Image">
+            <img src="../pic/museum.png" alt="museum Image">
             <p>Museum </p>
         </div>
     </div>
 </div>
+
+<script>
+    document.querySelector('.fa-angle-double-down').addEventListener('click', function() {
+        document.querySelector('.center-content-hobby').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
 
 </body>
 </html>

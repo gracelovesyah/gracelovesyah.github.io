@@ -518,3 +518,14 @@ h1 {
 a {
     text-decoration: none;
 }  
+
+html {
+    scroll-behavior: smooth;
+}
+
+.fa-angle-double-down:hover {
+    color: #b9b29a;  /* Change this to any color you prefer */
+    cursor: pointer; /* Change the cursor to a hand to indicate it's clickable */
+    transform: scale(1.1); /* Slightly increase the size for a subtle effect */
+    transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
+}

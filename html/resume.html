@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Jiahe Grace - Resume</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="themeToggle.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <script src="../scripts/themeToggle.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -28,14 +28,19 @@
     
     <div class="center-content">
         <h1>My Resume</h1>
-        <p>Click on the preview below to view or download my full resume.</p><br>
+        <p>Click on the preview below to view or download my full resume.</p>
         <i class="fa fa-angle-double-down" style="font-size:36px"></i>
     </div>
     <div class="center-content">
-        <a href="resume.pdf" download="Jiahe_Grace_Resume.pdf" target="_blank">
-            <img src="resume_preview.jpg" alt="Resume Preview" class="resume-preview">
+        <a class = "resume" href="../paper/resume.pdf" download="Jiahe_Grace_Resume.pdf" target="_blank">
+            <img src="../pic/resume_preview.jpg" alt="Resume Preview" class="resume-preview">
         </a>
     </div>
     </div>
+    <script>
+        document.querySelector('.fa-angle-double-down').addEventListener('click', function() {
+            document.querySelector('.resume').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>
 </body>
 </html>

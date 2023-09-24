@@ -2,8 +2,8 @@
 <html>
 <head>
     <title>Jiahe Grace - Projects</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="themeToggle.js"></script>
+    <link rel="stylesheet" type="text/css" href="../styles.css">
+    <script src="../scripts/themeToggle.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -26,7 +26,7 @@
     
     <div class="center-content">
         <h1>My Projects</h1>
-        <p> Big Data Analysis | Machine Learning | Web Application | NLP | Deep Learning</p><br>
+        <p> Big Data Analysis | Machine Learning | Web Application | NLP | Deep Learning</p>
         <i class="fa fa-angle-double-down" style="font-size:36px"></i>
 
     </div>  
@@ -132,6 +132,10 @@
         </div>    
     </div>
     
-    
+    <script>
+        document.querySelector('.fa-angle-double-down').addEventListener('click', function() {
+            document.querySelector('.project-card').scrollIntoView({ behavior: 'smooth' });
+        });
+    </script>  
 </body>
 </html>
