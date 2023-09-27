@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jiahe Grace - Research</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts/themeToggle.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<body>
+    <div class="navbar">
+        <button id="theme-toggle">
+            <svg class="lightbulb" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 2.38 1.19 4.47 3 5.74V17c0 .55 .45 1 1 1h1v1c0 .55 .45 1 1 1h6c.55 0 1-.45 1-1v-1h1c.55 0 1-.45 1-1v-2.26c1.81-1.27 3-3.36 3-5.74 0-3.87-3.13-7-7-7zm1 14h-2v-1h2v1zm0-3h-2v-4h2v4z"/>
+            </svg>
+        </button>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+           <a href="project.html">Project</a>
+            <a href="research.html">Research</a>
+            <a href="notebook.html">Notebook</a>
+            <a href="resume.html">Resume</a>
+        </div>
+    </div>
+    <div class="center-content">
+        <h1>My Nootbooks</h1>
+        <p> Database System | Statistical Machine Learing | Multivariate Statistics | ...</p>
+        <i class="fa fa-angle-double-down" style="font-size:36px"></i>
+    </div>
+
+    <div class="center-content">
+        <!-- COMP90050 Notes -->
+        <div class="project-card">
+            
+            <h2>
+                <a href="https://gracelovesyah.github.io/comp90050notes/" target="_blank">
+                    <span><i class="fa fa-github" style="font-size:24px; color: #b9b29a"></i></span>
+                 COMP90050 Advance Database System
+                </a>
+            </h2>
+            <div class="labels">
+                <span class="label">DB Hardware</span>
+                <span class="label">DB Operations</span>
+                <span class="label">DB Structure</span>
+                <span class="label">DB Transaction</span>  <br>
+                <span class="tool-label">R</span>
+                <span class="tool-label">Jupyerbook</span>
+                <span class="tool-label">Git</span>
+                <span class="tool-label">VS Code</span>
+            </div>
+            <div class="project-description">
+                <!-- Project details here -->
+                
+                A detailed math notes of COMP90050 Advance Database System @ Unimelb...
+            </div>
+        </div>
+
+        <!-- MAST90139 Notes -->
+        <div class="project-card">
+            
+            <h2>
+                <a href="https://gracelovesyah.github.io/mast90139notes/" target="_blank">
+                    <span><i class="fa fa-github" style="font-size:24px; color: #b9b29a"></i></span>
+                 MAST90139 Multivariate Statistics
+                </a>
+            </h2>
+            <div class="labels">
+                <span class="label">PCA</span>
+                <span class="label">PCR</span>
+                <span class="label">Statistics</span> <br>
+                <span class="tool-label">R</span>
+                <span class="tool-label">Jupyerbook</span>
+                <span class="tool-label">Git</span>
+                <span class="tool-label">VS Code</span>
+            </div>
+            <div class="project-description">
+                <!-- Project details here -->
+                
+                A detailed math notes of MAST90139 Multivariate Statistics in Data Scinece @ Unimelb...
+            </div>
+        </div>
+        
+
+        <script>
+            document.querySelector('.fa-angle-double-down').addEventListener('click', function() {
+                document.querySelector('.project-card').scrollIntoView({ behavior: 'smooth' });
+            });
+        </script>  
+</div>
+
