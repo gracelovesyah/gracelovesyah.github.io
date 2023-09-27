@@ -514,12 +514,6 @@ h1 {
     color: var(--navbar-background);
 }
 
-
-a {
-    text-decoration: none;
-    color: #5A4D40;
-}  
-
 html {
     scroll-behavior: smooth;
 }
@@ -530,3 +524,9 @@ html {
     transform: scale(1.1); /* Slightly increase the size for a subtle effect */
     transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
 }
+
+
+a {
+    text-decoration: none;
+    color: #5A4D40;
+}  
