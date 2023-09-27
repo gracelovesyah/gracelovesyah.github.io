@@ -21,7 +21,7 @@
     --navbar-text-hover: #5A4D40;
     --navbar-hover-background: #F2DFA2;
 }
-.navbar a, .project-link, .download-btn, .label, .tool-label, .research-section a {
+.navbar a, .project-link, .download-btn, .label, .tool-label, .research-section a, a{
     will-change: background-color, color;
 }
 body {
@@ -525,8 +525,3 @@ html {
     transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
 }
 
-
-a {
-    text-decoration: none;
-    color: #5A4D40;
-}  
