@@ -13,6 +13,9 @@
     box-sizing: border-box;
 }
 /* Dark Mode */
+a {
+    color: var(--text-color);
+}
 .dark {
     --background-color: #2E2E2E;
     --text-color: #FAF3E0;
@@ -524,4 +527,3 @@ html {
     transform: scale(1.1); /* Slightly increase the size for a subtle effect */
     transition: color 0.3s, transform 0.3s; /* Smooth transition for color and transform */
 }
-
