@@ -259,7 +259,7 @@ h1 {
         padding-top: 20px;  /* Increase padding for smaller screens */
     }
     .navbar a {
-        font-size: 15px; /* Adjust this value to your preference for smaller screens */
+        font-size: 11px; /* Adjust this value to your preference for smaller screens */
         padding: 8px;
 
     }
