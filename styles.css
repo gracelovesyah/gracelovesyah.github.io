@@ -732,3 +732,43 @@ html {
     background-color: #E2A8A8;
 }
 
+:root {
+  --w: 6rem;
+  --h: 4rem;
+  --b: 5px solid #5A4D40;
+}
+
+
+
+.mail {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--w);
+  height: var(--h);
+  border: var(--b);
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.mail:after {
+  content: "";
+  width: calc(var(--w) / 1.414);
+  height: calc(var(--w) / 1.414);
+  transform-origin: 50% 50%;
+  transform: rotate(45deg) translateX(calc(var(--h) / (-1.414 * 2)))
+    translateY(calc(var(--h) / (-1.414 * 2)));
+  border: var(--b);
+  box-sizing: border-box;
+}
+
+.mail:hover {
+  overflow: visible;
+}
+.envelope-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
