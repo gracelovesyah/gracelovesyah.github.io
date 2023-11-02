@@ -712,3 +712,23 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+
+.recommendation-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #5A4D40;
+    text-decoration: none;
+    border: 3px dashed #5A4D40;  /* Increased border width */
+    border-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+
+.recommendation-link:hover {
+    background-color: #F2DFA2;
+}
+.recommendation-link.chinese-link:hover {
+    background-color: #E2A8A8;
+}
+
