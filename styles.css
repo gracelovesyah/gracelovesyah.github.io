@@ -28,6 +28,7 @@ a {
 .navbar a, .project-link, .download-btn, .label, .tool-label, .research-section a, a{
     will-change: background-color, color;
 }
+
 body {
     transition: background-color 0.5s ease, color 0.5s ease;
     will-change: background-color, color;
@@ -303,11 +304,23 @@ h1 {
     border-radius: 8px;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: var(--text-color);
 }
+
+.project-card a {
+    color: var(--text-color);
+}
+
+
 
 .project-card:hover {
     background-color: var(--navbar-hover-background);
     transform: translateY(-5px);
+    color: var(--navbar-text-hover)
+}
+
+.project-card:hover a {
+    color: var(--navbar-text-hover)
 }
 
 .project-title {
@@ -330,10 +343,6 @@ h1 {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.project-link:hover {
-    background-color: var(--navbar-text);
-    color: var(--navbar-background);
-}
 
 
 .pdf-preview img {
@@ -369,7 +378,7 @@ h1 {
 
 .tool-label {
  /* A lighter warm color for tools */
-    color: #5A4D40;
+    color: var(--navbar-text);
     padding: 5px 10px;
     margin: 5px;
     border-radius: 5px;
@@ -486,11 +495,14 @@ h1 {
     display: flex;
     align-items: start; /* Align items to the top */
     gap: 20px; /* Space between the image and the content */
+    color: var(--text-color)
+    
 }
 
 .research-card:hover {
     background-color: var(--navbar-hover-background);
     transform: translateY(-5px);
+    color: var(--navbar-text-hover)
 }
 
 .research-title {
