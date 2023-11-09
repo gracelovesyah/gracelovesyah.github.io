@@ -307,21 +307,7 @@ h1 {
     color: var(--text-color);
 }
 
-.project-card a {
-    color: var(--text-color);
-}
 
-
-
-.project-card:hover {
-    background-color: var(--navbar-hover-background);
-    transform: translateY(-5px);
-    color: var(--navbar-text-hover)
-}
-
-.project-card:hover a {
-    color: var(--navbar-text-hover)
-}
 
 .project-title {
     font-size: 1.5em;
@@ -499,11 +485,7 @@ h1 {
     
 }
 
-.research-card:hover {
-    background-color: var(--navbar-hover-background);
-    transform: translateY(-5px);
-    color: var(--navbar-text-hover)
-}
+
 
 .research-title {
     font-size: 1.5em;
@@ -792,3 +774,12 @@ html {
     width: 100%; /* Make sure the container takes the full width available */
     gap: 20px;
 }
+
+
+.project-card:hover, .research-card:hover {
+    transform: translateY(-5px); /* Optional: Add a slight upward transition */
+    /* Define the desired shadow effect */
+    box-shadow: 0 10px 20px var(--navbar-hover-background);
+    /* Remove the background-color change if you don't want it */
+}
+
