@@ -783,3 +783,35 @@ html {
     /* Remove the background-color change if you don't want it */
 }
 
+.hover-image {
+    position: relative;
+}
+.hover-image-preview {
+    
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    z-index: 10;
+    transition: visibility 0s, opacity 0.5s linear;
+    margin-top: -50px; /* Adjust this value to move the image lower */
+    margin-left: 20px; /* Adjust as necessary */
+  }
+  
+  .hover-image:hover .hover-image-preview {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .hover-image-preview img {
+    max-width: 200px; /* Adjust as necessary */
+    border: 1px solid #ccc; /* Optional */
+    box-shadow: 2px 2px 5px #999; /* Optional */
+  }
+  
+  .content li {
+    margin-top: 20px; /* Adjust the value as needed */
+}
+
+.content a {
+    text-decoration: underline;
+  }
