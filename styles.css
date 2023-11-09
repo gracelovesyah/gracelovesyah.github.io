@@ -803,7 +803,7 @@ html {
   }
   
   .hover-image-preview img {
-    max-width: 200px; /* Adjust as necessary */
+    max-width: 100%; /* Adjust as necessary */
     border: 1px solid #ccc; /* Optional */
     box-shadow: 2px 2px 5px #999; /* Optional */
   }
